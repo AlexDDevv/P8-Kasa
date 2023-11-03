@@ -1,9 +1,10 @@
 import React from 'react'
 import Header from '../components/Layout/Header'
+import AboutBanner from '../components/About/AboutBanner'
 
 export default function About() {
   return <>
     <Header />
-    <h1>About kasa</h1>
+    <AboutBanner />
   </>
 }
