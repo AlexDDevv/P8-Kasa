@@ -1,0 +1,28 @@
+@import "./settings";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+   .header-logo {
+        .logo-header {
+            width: 100%;
+        }
+   }
+   .nav-bar {
+        .nav-list {
+            display: flex;
+            gap: 50px;
+
+            .nav-li {
+                .nav-link {
+                    color: $red;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+            }
+        }
+   } 
+}
