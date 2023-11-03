@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$font: "Montserrat", sans-serif;
+$red: #FF6060;
+$grayBg: #F6F6F6;
+$grayBgStar: #E3E3E3;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font;
+}
