@@ -10,10 +10,10 @@ export default function Header() {
         <nav className="nav-bar">
             <ul className="nav-list">
               <li className="nav-li">
-                <NavLink to="/" className="nav-link">Accueil</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active-nav-link" : "nav-link"}>Accueil</NavLink>
               </li>
               <li className="nav-li">
-                <NavLink to="/About" className="nav-link">À propos</NavLink>
+                <NavLink to="/About" className={({ isActive }) => isActive ? "active-nav-link" : "nav-link"}>À Propos</NavLink>
               </li>
             </ul>
         </nav>

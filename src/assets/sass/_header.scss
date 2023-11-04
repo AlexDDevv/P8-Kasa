@@ -17,10 +17,18 @@ header {
             gap: 50px;
 
             .nav-li {
-                .nav-link {
+                a {
                     color: $red;
+                    font-size: 1.5rem;
                     font-weight: 500;
+                }
+                .nav-link {
                     text-decoration: none;
+                }
+                .active-nav-link {
+                    text-decoration-color: $red;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 2px;
                 }
             }
         }
