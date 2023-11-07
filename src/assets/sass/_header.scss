@@ -7,9 +7,21 @@ header {
     margin-bottom: 50px;
     padding: 45px 90px 0 90px;
 
+    @media screen and (max-width: 1000px) {
+        padding: 45px 45px 0 45px;
+    }
+    @media screen and (max-width: 800px) {
+        margin-bottom: 25px;
+        padding: 20px 20px 0 20px;
+    }
+
    .header-logo {
         .logo-header {
             width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 125px;
         }
    }
    .nav-bar {
@@ -17,11 +29,23 @@ header {
             display: flex;
             gap: 50px;
 
+            @media screen and (max-width: 800px) {
+                gap: 20px;
+            }
+
             .nav-li {
                 a {
                     color: $red;
                     font-size: 1.5rem;
                     font-weight: 500;
+
+                    @media screen and (max-width: 800px) {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+                    @media screen and (max-width: 600px) {
+                        font-size: 0.75rem;
+                    }
                 }
                 .nav-link {
                     text-decoration: none;
