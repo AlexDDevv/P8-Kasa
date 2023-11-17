@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import ArrowCollapse from '../../assets/images/arrows/arrow-menu.png'
-import DataCollapse from '../../data/dataCollapse.json'
 
-export default function Collapse() {
-    const [toggle, setToggle] = useState(Array(DataCollapse.length).fill(false))
+export default function Collapse(props) {
+    const [toggle, setToggle] = useState(Array(props.data.length).fill(false))
     
     const toggleState = (id) => {
         const newToggle = [...toggle];
@@ -13,7 +12,7 @@ export default function Collapse() {
 
   return (
     <div className="collapse-container">
-        {DataCollapse.map((item, id) => (
+        {props.data.map((item, id) => (
             <div key={id} className="menu-collapse">
                 <div className="menu-title">
                     <h2 className="title-collapse">{item.title}</h2>
