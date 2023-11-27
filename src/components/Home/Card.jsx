@@ -7,7 +7,7 @@ export default function Card() {
         <div className="cards-container">
             {Datas.map(item => (
                 <div key={item.id} className="card">
-                    <Link to={"Housing/" + item.id}>
+                    <Link to={"housing/" + item.id}>
                         <figure className="card-figure">
                             <img src={item.cover} alt="Image d'un appartement" className="card-img" />
                             <figcaption className="card-figcaption">
