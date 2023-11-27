@@ -13,7 +13,7 @@ export default function Header() {
                 <NavLink to="/" className={({ isActive }) => isActive ? "active-nav-link" : "nav-link"}>Accueil</NavLink>
               </li>
               <li className="nav-li">
-                <NavLink to="/About" className={({ isActive }) => isActive ? "active-nav-link" : "nav-link"}>À Propos</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "active-nav-link" : "nav-link"}>À Propos</NavLink>
               </li>
             </ul>
         </nav>
