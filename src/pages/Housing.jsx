@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from '../components/Layout/Header'
+import Footer from '../components/Layout/Footer'
+import HousingContent from '../components/HousingPage/HousingContent'
 
 export default function Housing() {
-  return (
-    <div>
-        <h1>Housing</h1>
-    </div>
-  )
+  return <>
+    <Header />
+    <HousingContent />
+    <Footer />
+  </>
 }
