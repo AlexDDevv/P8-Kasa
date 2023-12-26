@@ -25,10 +25,16 @@ export default function Gallery(props) {
                 className={i + 1 === sliderIndex ? 'slider-img' : 'slider-img hidden'} />
             ))}
 
-            <img onClick={() => toggleImage(-1)} src={LeftArrow} alt="Flèche de gauche" className="carrousel-arrows arrow-left" />
-            <img onClick={() => toggleImage(1)} src={RightArrow} alt="Flèche de droite" className="carrousel-arrows arrow-right" />
+            {props.img.length > 1 && (
+                <img onClick={() => toggleImage(-1)} src={LeftArrow} alt="Flèche de gauche" className="carrousel-arrows arrow-left" />
+            )}
+            {props.img.length > 1 && (
+                <img onClick={() => toggleImage(1)} src={RightArrow} alt="Flèche de droite" className="carrousel-arrows arrow-right" />
+            )}
 
-            <p className="slide-nb">{sliderIndex} / {props.img.length}</p>
+            {props.img.length > 1 && (
+                <p className="slide-nb">{sliderIndex} / {props.img.length}</p>
+            )}
         </div>
     </>
   )
