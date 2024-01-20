@@ -1,6 +1,7 @@
 import React from 'react'
 import Datas from '../../data/data.json'
 import Gallery from '../Layout/Gallery'
+import Tag from '../Layout/Tag'
 import Rate from './Rate'
 import Collapse from '../Layout/Collapse'
 import { useParams, Navigate } from 'react-router-dom'
@@ -28,7 +29,10 @@ export default function HousingContent() {
                         </div>
                         <div className="tags-container">
                             {data.tags.map((tag, i) => (
-                                <span key={i} className="tag">{tag}</span>
+                                <Tag
+                                    key={i}
+                                    tag={tag}
+                                />
                             ))}
                         </div>
                     </div>
