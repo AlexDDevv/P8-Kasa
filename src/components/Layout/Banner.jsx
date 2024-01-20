@@ -1,10 +1,12 @@
 import React from 'react'
 
-export default function Banner(props) {
+export default function Banner({ ifTitle, title, src }) {
   return (
     <div className="banner-container">
-        <h1 className="banner-title">{props.title}</h1>
-        <img src={props.src} alt="Bannière Kasa" className="banner-img"/>
+        {ifTitle && 
+          <h1 className="banner-title">{title}</h1>
+        }
+        <img src={src} alt="Bannière Kasa" className="banner-img"/>
     </div>
   )
 }
