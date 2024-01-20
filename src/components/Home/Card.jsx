@@ -1,22 +1,17 @@
 import React from 'react'
-import Datas from '../../data/data.json'
 import { Link } from 'react-router-dom'
 
-export default function Card() {
+export default function Card({ id, cover, title }) {
     return (
-        <div className="cards-container">
-            {Datas.map(item => (
-                <div key={item.id} className="card">
-                    <Link to={"housing/" + item.id}>
-                        <figure className="card-figure">
-                            <img src={item.cover} alt="Image d'un appartement" className="card-img" />
-                            <figcaption className="card-figcaption">
-                                <h2 className="card-title">{item.title}</h2>
-                            </figcaption>
-                        </figure>
-                    </Link>
-                </div>
-            ))}
+        <div key={id} className="card">
+            <Link to={"housing/" + id}>
+                <figure className="card-figure">
+                    <img src={cover} alt="Image d'un appartement" className="card-img" />
+                    <figcaption className="card-figcaption">
+                        <h2 className="card-title">{title}</h2>
+                    </figcaption>
+                </figure>
+            </Link>
         </div>
     )
 }
