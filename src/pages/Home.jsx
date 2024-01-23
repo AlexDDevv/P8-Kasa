@@ -4,7 +4,7 @@ import Banner from '../components/Layout/Banner'
 import Card from '../components/Home/Card'
 import Footer from '../components/Layout/Footer'
 import Datas from '../data/data.json'
-import aboutBanner from '../assets/images/banner/banner-home.png'
+import homeBanner from '../assets/images/banner/banner-home.png'
 
 export default function Home() {
     return <>
@@ -12,7 +12,7 @@ export default function Home() {
         <Banner
             ifTitle={true}
             title="Chez vous, partout et ailleurs"
-            src={aboutBanner}
+            src={homeBanner}
         />
         <section className="cards-container">
             {Datas.map(item => (
