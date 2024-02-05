@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className='header'>
         <div className="header-logo">
-            <img src="../src/assets/images/logo/logo-desktop.png" alt="Logo de l'entreprise Kasa" className="logo-header" />
+            <img src="../../src/assets/images/logo/logo-desktop.png" alt="Logo de l'entreprise Kasa" className="logo-header" />
         </div>
         <nav className="nav-bar">
             <ul className="nav-list">
